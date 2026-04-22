@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La Leyenda de 1900</title>
+
+    <style>
+        body {
+            background-image: url('https://www.shutterstock.com/image-photo/color-background-35mm-film-strip-600nw-2419449945.jpg');
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 80%;
+            background-color: aqua;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Marquesina */
+        .marquesina {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .marquesina span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: mover 10s linear infinite;
+            color: #E54C0B;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        @keyframes mover {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Imagen con recuadro */
+        .contenedor-img {
+            border: 5px solid #333;
+            padding: 10px;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efecto al pasar el mouse */
+        .contenedor-img:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="marquesina">
+                    <span>LA LEYENDA DE 1900</span>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">Inicio</td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <div class="contenedor-img">
+                    <img width="400" height="450"
+                    src="https://m.media-amazon.com/images/S/pv-target-images/9d3809bd046a193da1e215b76a10212e75645dcd666176967ee270f2b844fe27.jpg">
+                </div>
+            </td>
+
+            <td>
+                La película cuenta la historia de un hombre extraordinario llamado Novecento, quien nace y crece a bordo de un transatlántico llamado SS Virginian sin haber pisado nunca tierra firme.<br><br>
+
+                Novecento es encontrado siendo un bebé por un trabajador del barco, quien lo cría como suyo. Con el tiempo, demuestra ser un prodigio del piano, capaz de tocar con una sensibilidad y talento únicos, sorprendiendo a todos los pasajeros.<br><br>
+
+                Su fama crece, e incluso se enfrenta al pianista Jelly Roll Morton, a quien logra impresionar.<br><br>
+
+                A pesar de poder bajar del barco, Novecento siente miedo del mundo exterior. Prefiere quedarse en su universo limitado pero seguro.<br><br>
+
+                La historia es narrada por su amigo Max Tooney. Al final, decide no abandonar el barco, permaneciendo fiel a su hogar.<br><br>
+
+                <b>Tema central:</b> Reflexiona sobre el miedo a lo desconocido, la libertad y las decisiones de vida.
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <iframe src="https://www.youtube.com/embed/HbCm58Cr2E4" 
+                frameborder="0" allowfullscreen></iframe>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
